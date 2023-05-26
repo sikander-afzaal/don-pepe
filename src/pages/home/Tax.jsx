@@ -4,9 +4,7 @@ const Tax = () => {
   return (
     <div id="tax" className="wrapper  lg:mt-0 mt-10">
       <div className="contain justify-start items-start  flex-col gap-5">
-        <h3 className="text-white font-bold leading-[1.2] text-3xl sm:text-[40px] 2xl:text-[50px]">
-          Tax
-        </h3>
+        <h3 className="title">Tax</h3>
         <p className="text-white">
           Don Pepe Coin is designed to reward the "famiglia" first and foremost,
           helping to grow the community and secure a foothold in the crypto

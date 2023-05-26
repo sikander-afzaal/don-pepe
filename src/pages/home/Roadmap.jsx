@@ -1,11 +1,13 @@
 const Roadmap = () => {
   return (
-    <div id="roadmap" className="mt-[60px] xl:mt-[150px] wrapper">
+    <div
+      id="roadmap"
+      className="mt-[60px] xl:mt-[150px] wrapper relative isolate"
+    >
+      <div className="absolute -translate-x-1/2  top-1/2 -translate-y-1/2 left-1/2 w-full opacity-40 max-w-[700px] aspect-square rounded-full blur-[200px] bg-shadow -z-10"></div>
       <div className="contain flex-col justify-center items-center gap-10">
         <div className="text-center">
-          <h2 className="text-white font-bold leading-[1.2] text-3xl sm:text-[40px] 2xl:text-[50px]">
-            Roadmap
-          </h2>
+          <h2 className="title">Roadmap</h2>
           <p className="text-white max-w-[800px]">
             Are you ready to pledge your loyalty to the Don Pepe family? Join
             our "famiglia" today, and together, we'll have the world of crypto
@@ -16,7 +18,7 @@ const Roadmap = () => {
           <div className="absolute left-0 sm:left-1/2 -translate-x-1/2 top-0 w-[1px] bg-white h-full"></div>
           <div className="gap-3 w-full   flex justify-start items-start sm:items-end flex-col relative pl-9 sm:pr-9 sm:text-right text-left">
             <div className="rounded-full bg-white w-6 aspect-square absolute -translate-x-1/2 top-0.5 left-0 sm:left-full"></div>
-            <h3 className="text-white font-bold text-2xl">
+            <h3 className="text-title font-bold text-2xl">
               Establishing Territory (2Q ‘23)
             </h3>
             <p className="text-white text-base md:text-lg opacity-70">
@@ -39,7 +41,7 @@ const Roadmap = () => {
           <div className="w-full h-full sm:block hidden"></div>
           <div className="w-full gap-3  flex justify-start items-start flex-col relative pl-9 text-left">
             <div className="rounded-full bg-white w-6 aspect-square absolute translate-x-1/2 top-0.5 right-full"></div>
-            <h3 className="text-white font-bold text-2xl">
+            <h3 className="text-title font-bold text-2xl">
               Taking Control (3Q ‘23)
             </h3>
             <p className="text-white text-base md:text-lg opacity-70">
@@ -60,7 +62,7 @@ const Roadmap = () => {
           </div>
           <div className="w-full gap-3  flex justify-start items-start sm:items-end flex-col relative pl-9 sm:pr-9 sm:text-right text-left">
             <div className="rounded-full bg-white w-6 aspect-square absolute -translate-x-1/2 top-0.5 left-0 sm:left-full"></div>
-            <h3 className="text-white font-bold text-2xl">
+            <h3 className="text-title font-bold text-2xl">
               Supreme Power (4Q ‘23 and beyond)
             </h3>
             <p className="text-white text-base md:text-lg opacity-70">

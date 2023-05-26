@@ -47,7 +47,9 @@ const Hero = () => {
     };
   });
   return (
-    <div className="wrapper pt-[150px] xl:pt-[240px]">
+    <div className="wrapper pt-[150px] xl:pt-[240px] relative isolate">
+      <div className="absolute top-1/2  translate-x-1/2  right-0 w-full max-w-[400px] aspect-square rounded-full blur-[200px] bg-shadow  opacity-80 -z-10"></div>
+      <div className="absolute top-0  opacity-70  -translate-x-1/2  left-0 w-full max-w-[400px] aspect-square rounded-full blur-[200px] bg-shadow -z-10"></div>
       <div className="contain xl:flex-row flex-col justify-start items-center text-center xl:text-left xl:items-stretch gap-10">
         <div className="flex justify-start items-center xl:items-start flex-col max-w-[700px] gap-5">
           <h3 className="text-white font-bold leading-[1.2] text-3xl sm:text-[40px] 2xl:text-[60px]">
@@ -81,25 +83,25 @@ const Hero = () => {
       <div className="contain flex-col gap-4 justify-start items-center mt-5">
         <div className="grid grid-cols-4 gap-8 mt-4">
           <div className="flex justify-start items-center flex-col gap-3">
-            <h4 className="  rounded-xl text-btn text-green grid place-items-center text-[34px] sm:text-[55px] xl:text-[63px] font-bold ">
+            <h4 className="  rounded-xl text-title text-green grid place-items-center text-[34px] sm:text-[55px] xl:text-[63px] font-bold ">
               {timerDays}
             </h4>
             <p className="text-white font-bold">Days</p>
           </div>
           <div className="flex justify-start items-center flex-col gap-3">
-            <h4 className="  rounded-xl text-btn text-green grid place-items-center text-[34px] sm:text-[55px] xl:text-[63px] font-bold ">
+            <h4 className="  rounded-xl text-title text-green grid place-items-center text-[34px] sm:text-[55px] xl:text-[63px] font-bold ">
               {timerHours}
             </h4>
             <p className="text-white font-bold">Hours</p>
           </div>
           <div className="flex justify-start items-center flex-col gap-3">
-            <h4 className="  rounded-xl text-btn text-green grid place-items-center text-[34px] sm:text-[55px] xl:text-[63px] font-bold ">
+            <h4 className="  rounded-xl text-title text-green grid place-items-center text-[34px] sm:text-[55px] xl:text-[63px] font-bold ">
               {timerMinutes}
             </h4>
             <p className="text-white font-bold">Minutes</p>
           </div>
           <div className="flex justify-start items-center flex-col gap-3">
-            <h4 className="  rounded-xl text-btn text-green grid place-items-center text-[34px] sm:text-[55px] xl:text-[63px] font-bold ">
+            <h4 className="  rounded-xl text-title text-green grid place-items-center text-[34px] sm:text-[55px] xl:text-[63px] font-bold ">
               {timerSeconds}
             </h4>
             <p className="text-white font-bold">Seconds</p>

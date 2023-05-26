@@ -11,13 +11,17 @@
     @apply flex w-[90%] max-w-[1400px];
   }
   body {
-    @apply bg-[#07040b];
+    @apply bg-[#07040b] overflow-x-hidden;
   }
   .ctaBtn {
     @apply bg-btn px-10 py-3 rounded-xl text-white text-base font-semibold grid place-items-center hover:bg-transparent border-2 border-solid border-btn transition-all duration-300;
+  }
+  .title {
+    @apply text-title font-bold leading-[1.2] text-3xl sm:text-[40px] 2xl:text-[50px];
   }
 }
 html {
   scroll-behavior: smooth;
   scroll-padding-block: 120px;
+  overflow-x: hidden;
 }

@@ -1,11 +1,13 @@
 const Other = () => {
   return (
-    <div id="famiglia" className="wrapper mt-[60px] xl:mt-[150px]">
+    <div
+      id="famiglia"
+      className="wrapper mt-[60px] xl:mt-[150px] isolate relative"
+    >
+      <div className="absolute top-full  opacity-70  translate-x-1/2  right-0 w-full max-w-[400px] aspect-square rounded-full blur-[200px] bg-shadow -z-10"></div>
       <div className="contain xl:flex-row-reverse flex-col justify-between items-stretch gap-10">
         <div className="flex justify-start items-start flex-col gap-5">
-          <h3 className="text-white font-bold leading-[1.2] text-3xl sm:text-[40px] 2xl:text-[50px]">
-            A "Famiglia" Like No Other
-          </h3>
+          <h3 className="title">A "Famiglia" Like No Other</h3>
           <p className="text-white">
             By joining Don Pepe, you're becoming part of the family, capiche? A
             family that values boldness, wit, and a dash of danger. Don Pepe is

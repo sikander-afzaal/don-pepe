@@ -40,7 +40,9 @@ const Header = () => {
   }, [headerToggle]);
   return (
     <header
-      className={`wrapper fixed top-0 left-0 z-50 transition-all duration-500 bg-[#07040b]`}
+      className={`wrapper fixed top-0 left-0 z-50 transition-all duration-500 ${
+        bg ? "bg-[#07040b]" : "bg-transparent"
+      } transition-all duration-300`}
     >
       {headerToggle && (
         <div

@@ -10,6 +10,8 @@ export default {
       },
       colors: {
         btn: "#49434e",
+        title: "#A1B86C",
+        shadow: "#A8866D",
       },
     },
   },

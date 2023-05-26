@@ -3,9 +3,7 @@ const About = () => {
     <div id="about" className="wrapper mt-[60px] xl:mt-[150px]">
       <div className="contain xl:flex-row flex-col justify-between items-stretch gap-10">
         <div className="flex justify-start items-start flex-col gap-5">
-          <h3 className="text-white font-bold leading-[1.2] text-3xl sm:text-[40px] 2xl:text-[50px]">
-            Don Pepe: Capo Dei Capi
-          </h3>
+          <h3 className="title">Don Pepe: Capo Dei Capi</h3>
           <p className="text-white">
             We're committed to crafting a coin that's not just fun and games,
             but knows how to do the dirty work. Don Pepe isn’t stopping until
