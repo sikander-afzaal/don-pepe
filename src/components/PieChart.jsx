@@ -30,8 +30,8 @@ export const data = {
     {
       label: "Token Distribution",
       data: [5, 10, 85],
-      backgroundColor: ["#1dcf83", "rgba(45, 73, 254, 1)", "rgb(51, 139, 147)"],
-      borderColor: ["#1dcf83", "rgba(45, 73, 254, 1)", "rgb(51, 139, 147)"],
+      backgroundColor: ["#A1B86C", "#A46B4A", "#49434e"],
+      borderColor: ["#A1B86C", "#A46B4A", "#49434e"],
       borderWidth: 1,
       cutout: "60%",
     },

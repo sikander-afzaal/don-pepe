@@ -103,58 +103,49 @@ const Header = () => {
             Roadmap
           </a>
           <div className="flex justify-center items-center gap-3 flex-wrap">
-            <a href="https://t.me/pepissimo" target={"blank"}>
+            <a href="#" target={"blank"}>
               <FontAwesomeIcon
                 className="text-white text-2xl hover:text-lightPink transition-all"
                 icon={faTelegram}
               />
             </a>
-            <a href="https://twitter.com/thepepissimo" target={"blank"}>
+            <a href="#" target={"blank"}>
               <FontAwesomeIcon
                 className="text-white text-2xl hover:text-lightPink transition-all"
                 icon={faTwitter}
               />
             </a>
-            <a href="https://www.tiktok.com/@thepepissimo" target={"blank"}>
+            <a href="#" target={"blank"}>
               <FontAwesomeIcon
                 className="text-white text-2xl hover:text-lightPink transition-all"
                 icon={faTiktok}
               />
             </a>
-            <a
-              href="https://www.facebook.com/profile.php?id=100093023433454"
-              target={"blank"}
-            >
+            <a href="#" target={"blank"}>
               <FontAwesomeIcon
                 className="text-white text-2xl hover:text-lightPink transition-all"
                 icon={faFacebookF}
               />
             </a>
-            <a href="https://www.instagram.com/thepepissimo" target={"blank"}>
+            <a href="#" target={"blank"}>
               <FontAwesomeIcon
                 className="text-white text-2xl hover:text-lightPink transition-all"
                 icon={faInstagram}
               />
             </a>
-            <a href="https://www.youtube.com/@PepissimoDance" target={"blank"}>
+            <a href="#" target={"blank"}>
               <FontAwesomeIcon
                 className="text-white text-2xl hover:text-lightPink transition-all"
                 icon={faYoutube}
               />
             </a>
-            <a
-              href="https://open.spotify.com/track/1iCrmpTq8452K5X4UcAve2"
-              target={"blank"}
-            >
+            <a href="#" target={"blank"}>
               <FontAwesomeIcon
                 className="text-white text-2xl hover:text-lightPink transition-all"
                 icon={faSpotify}
               />
             </a>
-            <a
-              href="https://music.apple.com/us/album/pepissimo-dance/1688552034?i=1688552035"
-              target={"blank"}
-            >
+            <a href="#" target={"blank"}>
               <FontAwesomeIcon
                 className="text-white text-2xl hover:text-lightPink transition-all"
                 icon={faMusic}
