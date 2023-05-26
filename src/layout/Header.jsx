@@ -40,7 +40,7 @@ const Header = () => {
   }, [headerToggle]);
   return (
     <header
-      className={`wrapper fixed top-0 left-0 z-50 transition-all duration-500 bg-black`}
+      className={`wrapper fixed top-0 left-0 z-50 transition-all duration-500 bg-[#231110]`}
     >
       {headerToggle && (
         <div
@@ -51,7 +51,9 @@ const Header = () => {
       <div className="contain py-3 justify-between items-center gap-5">
         <img
           src="/logo.png"
-          className={`${bg ? "w-[90px]" : "w-[150px]"} object-contain`}
+          className={`${
+            bg ? "w-[90px]" : "w-[100px] xl:w-[150px]"
+          } object-contain`}
           alt=""
         />
         <nav

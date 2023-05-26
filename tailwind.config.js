@@ -8,6 +8,9 @@ export default {
       fontFamily: {
         sans: ["Poppins", ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        btn: "#49434e",
+      },
     },
   },
   plugins: [],
