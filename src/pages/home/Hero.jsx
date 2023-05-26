@@ -1,4 +1,51 @@
+import { useEffect, useRef, useState } from "react";
+
 const Hero = () => {
+  const [timerDays, setTimerDays] = useState("00");
+  const [timerHours, setTimerHours] = useState("00");
+  const [timerMinutes, setTimerMinutes] = useState("00");
+  const [timerSeconds, setTimerSeconds] = useState("00");
+
+  let interval = useRef();
+  const startTimer = () => {
+    let end = new Date("5/24/2023 5:00 PM");
+    interval = setInterval(() => {
+      let _second = 1000;
+      let _minute = _second * 60;
+      let _hour = _minute * 60;
+      let _day = _hour * 24;
+      let now = new Date();
+      let nowUTC = new Date(
+        now.getUTCFullYear(),
+        now.getUTCMonth(),
+        now.getUTCDate(),
+        now.getUTCHours(),
+        now.getUTCMinutes(),
+        now.getUTCSeconds()
+      );
+      let distance = end - nowUTC;
+      var days = Math.floor(distance / _day);
+      var hours = Math.floor((distance % _day) / _hour);
+      var minutes = Math.floor((distance % _hour) / _minute);
+      var seconds = Math.floor((distance % _minute) / _second);
+      if (distance < 0) {
+        clearInterval(interval.current);
+        return;
+      } else {
+        setTimerDays(days);
+        setTimerHours(hours);
+        setTimerMinutes(minutes);
+        setTimerSeconds(seconds);
+      }
+    });
+  };
+
+  useEffect(() => {
+    startTimer();
+    return () => {
+      clearInterval(interval.current);
+    };
+  });
   return (
     <div className="wrapper pt-[150px] xl:pt-[240px]">
       <div className="contain xl:flex-row flex-col justify-start items-center text-center xl:text-left xl:items-stretch gap-10">
@@ -30,6 +77,62 @@ const Hero = () => {
           loop
           className="w-full max-w-[700px] xl:w-1/2 object-cover rounded-xl"
         ></video>
+      </div>
+      <div className="contain flex-col gap-4 justify-start items-center mt-5">
+        <div className="grid grid-cols-4 gap-8 mt-4">
+          <div className="flex justify-start items-center flex-col gap-3">
+            <h4 className="  rounded-xl text-btn text-green grid place-items-center text-[34px] sm:text-[55px] xl:text-[63px] font-bold ">
+              {timerDays}
+            </h4>
+            <p className="text-white font-bold">Days</p>
+          </div>
+          <div className="flex justify-start items-center flex-col gap-3">
+            <h4 className="  rounded-xl text-btn text-green grid place-items-center text-[34px] sm:text-[55px] xl:text-[63px] font-bold ">
+              {timerHours}
+            </h4>
+            <p className="text-white font-bold">Hours</p>
+          </div>
+          <div className="flex justify-start items-center flex-col gap-3">
+            <h4 className="  rounded-xl text-btn text-green grid place-items-center text-[34px] sm:text-[55px] xl:text-[63px] font-bold ">
+              {timerMinutes}
+            </h4>
+            <p className="text-white font-bold">Minutes</p>
+          </div>
+          <div className="flex justify-start items-center flex-col gap-3">
+            <h4 className="  rounded-xl text-btn text-green grid place-items-center text-[34px] sm:text-[55px] xl:text-[63px] font-bold ">
+              {timerSeconds}
+            </h4>
+            <p className="text-white font-bold">Seconds</p>
+          </div>
+        </div>
+        <div className="flex flex-wrap justify-start items-center gap-5">
+          <a href="#" target="blank">
+            <img
+              src="/bsc.webp"
+              alt=""
+              className="max-w-[150px] object-contain"
+            />
+          </a>
+          <a href="#" target="blank">
+            <img
+              src="/smile.webp"
+              alt=""
+              className="max-w-[150px] object-contain"
+            />
+          </a>
+          <a href="#" target="blank">
+            <img
+              src="/pancake.png"
+              alt=""
+              className="max-w-[250px] object-contain"
+            />
+          </a>
+        </div>
+        <div className="grid max-w-[700px] sm:mt-5 grid-cols-1 sm:grid-cols-3 w-full gap-5">
+          <button className="ctaBtn">Audit</button>
+          <button className="ctaBtn">KYC</button>
+          <button className="ctaBtn">SAFU</button>
+        </div>
       </div>
     </div>
   );

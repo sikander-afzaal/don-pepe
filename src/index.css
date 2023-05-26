@@ -11,7 +11,7 @@
     @apply flex w-[90%] max-w-[1400px];
   }
   body {
-    @apply bg-[#231110];
+    @apply bg-[#07040b];
   }
   .ctaBtn {
     @apply bg-btn px-10 py-3 rounded-xl text-white text-base font-semibold grid place-items-center hover:bg-transparent border-2 border-solid border-btn transition-all duration-300;

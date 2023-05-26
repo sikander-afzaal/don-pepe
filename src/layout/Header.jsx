@@ -40,7 +40,7 @@ const Header = () => {
   }, [headerToggle]);
   return (
     <header
-      className={`wrapper fixed top-0 left-0 z-50 transition-all duration-500 bg-[#231110]`}
+      className={`wrapper fixed top-0 left-0 z-50 transition-all duration-500 bg-[#07040b]`}
     >
       {headerToggle && (
         <div
@@ -53,7 +53,7 @@ const Header = () => {
           src="/logo.png"
           className={`${
             bg ? "w-[90px]" : "w-[100px] xl:w-[150px]"
-          } object-contain`}
+          } object-contain transition-all duration-300`}
           alt=""
         />
         <nav
