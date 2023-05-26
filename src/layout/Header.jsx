@@ -61,22 +61,45 @@ const Header = () => {
             headerToggle ? "right-0" : "-right-[900px]"
           } h-full xl:w-auto xl:max-w-none w-full max-w-full sm:max-w-[400px] flex justify-start xl:items-center gap-6 pb-8  pt-[7rem] sm:pt-[6rem] px-8 xl:p-0 z-[89] xl:gap-5  xl:flex-row flex-col items-center sm:items-start bg-black xl:bg-transparent`}
         >
-          <a href="#" className="text-white font-semibold text-base">
-            Home
+          <a
+            onClick={() => setHeaderToggle(false)}
+            href="#dilemma"
+            className="text-white font-semibold text-base"
+          >
+            Dilemma
           </a>
-          <a href="#" className="text-white font-semibold text-base">
+          <a
+            onClick={() => setHeaderToggle(false)}
+            href="#famiglia"
+            className="text-white font-semibold text-base"
+          >
+            Famiglia
+          </a>
+          <a
+            onClick={() => setHeaderToggle(false)}
+            href="#about"
+            className="text-white font-semibold text-base"
+          >
             About
           </a>
-          <a href="#" className="text-white font-semibold text-base">
-            Tokenomics
+          <a
+            href="#distribution"
+            className="text-white font-semibold text-base"
+          >
+            Distribution
           </a>
-          <a href="#" className="text-white font-semibold text-base">
-            Community
-          </a>
-          <a href="#" className="text-white font-semibold text-base">
+          <a
+            onClick={() => setHeaderToggle(false)}
+            href="#tax"
+            className="text-white font-semibold text-base"
+          >
             Tax
           </a>
-          <a href="#" className="text-white font-semibold text-base">
+          <a
+            onClick={() => setHeaderToggle(false)}
+            href="#roadmap"
+            className="text-white font-semibold text-base"
+          >
             Roadmap
           </a>
           <div className="flex justify-center items-center gap-3 flex-wrap">

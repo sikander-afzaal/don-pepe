@@ -8,7 +8,7 @@ const Hero = () => {
 
   let interval = useRef();
   const startTimer = () => {
-    let end = new Date("5/24/2023 5:00 PM");
+    let end = new Date("6/24/2023 5:00 PM");
     interval = setInterval(() => {
       let _second = 1000;
       let _minute = _second * 60;

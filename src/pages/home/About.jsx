@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className="wrapper mt-[60px] xl:mt-[150px]">
+    <div id="about" className="wrapper mt-[60px] xl:mt-[150px]">
       <div className="contain xl:flex-row flex-col justify-between items-stretch gap-10">
         <div className="flex justify-start items-start flex-col gap-5">
           <h3 className="text-white font-bold leading-[1.2] text-3xl sm:text-[40px] 2xl:text-[50px]">
