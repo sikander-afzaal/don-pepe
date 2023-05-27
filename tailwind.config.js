@@ -13,6 +13,9 @@ export default {
         title: "#A1B86C",
         shadow: "#A8866D",
       },
+      backgroundImage: {
+        titleGr: "linear-gradient(315deg, #f2cf43 0%, #19a186 74%)",
+      },
     },
   },
   plugins: [],

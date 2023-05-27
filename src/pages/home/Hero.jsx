@@ -52,7 +52,7 @@ const Hero = () => {
       <div className="absolute top-0  opacity-70  -translate-x-1/2  left-0 w-full max-w-[400px] aspect-square rounded-full blur-[200px] bg-shadow -z-10"></div>
       <div className="contain xl:flex-row flex-col justify-start items-center text-center xl:text-left xl:items-stretch gap-10">
         <div className="flex justify-start items-center xl:items-start flex-col max-w-[700px] gap-5">
-          <h3 className="text-white font-bold leading-[1.2] text-3xl sm:text-[40px] 2xl:text-[60px]">
+          <h3 className="text-transparent bg-titleGr bg-clip-text font-bold leading-[1.2] text-3xl sm:text-[40px] 2xl:text-[60px]">
             Don Pepe Coin: Where Memes Meet Mobsters
           </h3>
           <p className="text-white">
