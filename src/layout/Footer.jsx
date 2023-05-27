@@ -75,7 +75,10 @@ const Footer = () => {
                 icon={faSpotify}
               />
             </a>
-            <a href="#" target={"blank"}>
+            <a
+              href="https://music.apple.com/us/album/mafia-single/1689328296"
+              target={"blank"}
+            >
               <FontAwesomeIcon
                 className="text-white text-2xl hover:text-lightPink transition-all"
                 icon={faMusic}
