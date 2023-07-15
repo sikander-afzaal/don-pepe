@@ -19,8 +19,14 @@ const Roadmap = () => {
           <div className="gap-3 w-full   flex justify-start items-start sm:items-end flex-col relative pl-9 sm:pr-9 sm:text-right text-left">
             <div className="rounded-full bg-white w-6 aspect-square absolute -translate-x-1/2 top-0.5 left-0 sm:left-full"></div>
             <h3 className="text-title font-bold text-2xl">
-              Establishing Territory (2Q ‘23)
+              Establishing Territory (Q3 ‘23)
             </h3>
+            <p className="text-white text-base md:text-lg opacity-70">
+              - CMC/CG Listing
+            </p>
+            <p className="text-white text-base md:text-lg opacity-70">
+              - Marketing and Presale
+            </p>
             <p className="text-white text-base md:text-lg opacity-70">
               - Family Founded
             </p>
@@ -42,14 +48,12 @@ const Roadmap = () => {
           <div className="w-full gap-3  flex justify-start items-start flex-col relative pl-9 text-left">
             <div className="rounded-full bg-white w-6 aspect-square absolute translate-x-1/2 top-0.5 right-full"></div>
             <h3 className="text-title font-bold text-2xl">
-              Taking Control (3Q ‘23)
+              Taking Control (Q4 ‘23)
             </h3>
             <p className="text-white text-base md:text-lg opacity-70">
               - Family Growth Stage
             </p>
-            <p className="text-white text-base md:text-lg opacity-70">
-              - Presale Marketing
-            </p>
+
             <p className="text-white text-base md:text-lg opacity-70">
               - Strategic Partnership Announcements
             </p>
@@ -63,14 +67,12 @@ const Roadmap = () => {
           <div className="w-full gap-3  flex justify-start items-start sm:items-end flex-col relative pl-9 sm:pr-9 sm:text-right text-left">
             <div className="rounded-full bg-white w-6 aspect-square absolute -translate-x-1/2 top-0.5 left-0 sm:left-full"></div>
             <h3 className="text-title font-bold text-2xl">
-              Supreme Power (4Q ‘23 and beyond)
+              Supreme Power (Q1 ‘24 and beyond)
             </h3>
             <p className="text-white text-base md:text-lg opacity-70">
               - Exclusive Family Events
             </p>
-            <p className="text-white text-base md:text-lg opacity-70">
-              - CMC/CG Listing
-            </p>
+
             <p className="text-white text-base md:text-lg opacity-70">
               - New LPs
             </p>

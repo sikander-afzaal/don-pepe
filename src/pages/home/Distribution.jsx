@@ -28,7 +28,10 @@ const Distribution = () => {
               <strong>CEX listings and LPs:</strong> 10% (100 billion)
             </p>
             <p className="text-white text-lg">
-              <strong>Presale and first LP:</strong> 85% (850 billion)
+              <strong>Presale and first LP:</strong> 80% (800 billion)
+            </p>
+            <p className="text-white text-lg">
+              <strong>Big Buy Contests:</strong> 5 % (50 billion)
             </p>
           </div>
         </div>

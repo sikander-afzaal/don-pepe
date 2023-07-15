@@ -13,11 +13,11 @@ const Tax = () => {
         </p>
         <div className="flex justify-start items-start flex-col">
           <p className="text-white font-bold text-xl">Buy tax: 3%</p>
-          <p className=" text-white">1% to marketing, 2% to holders</p>
+          <p className=" text-white">2% to marketing, 1% to holders</p>
         </div>
         <div className="flex justify-start items-start flex-col">
-          <p className="text-white font-bold text-xl">Sale tax: 5%</p>
-          <p className=" text-white">2% to marketing, 3% to holders</p>
+          <p className="text-white font-bold text-xl">Sale tax: 3%</p>
+          <p className=" text-white">2% to marketing, 1% to holders</p>
         </div>
       </div>
     </div>

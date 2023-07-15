@@ -33,55 +33,16 @@ const Footer = () => {
         <div className="flex flex-col w-full justify-center items-center gap-5 mt-14 sm:mt-5">
           <div className="flex justify-center items-center flex-wrap gap-5">
             {" "}
-            <a href="#" target={"blank"}>
+            <a href="http://t.me/donpepebsc_com" target={"blank"}>
               <FontAwesomeIcon
                 className="text-white text-2xl hover:text-lightPink transition-all"
                 icon={faTelegram}
               />
             </a>
-            <a href="#" target={"blank"}>
+            <a href="https://twitter.com/donpepebsc_com" target={"blank"}>
               <FontAwesomeIcon
                 className="text-white text-2xl hover:text-lightPink transition-all"
                 icon={faTwitter}
-              />
-            </a>
-            <a href="#" target={"blank"}>
-              <FontAwesomeIcon
-                className="text-white text-2xl hover:text-lightPink transition-all"
-                icon={faTiktok}
-              />
-            </a>
-            <a href="#" target={"blank"}>
-              <FontAwesomeIcon
-                className="text-white text-2xl hover:text-lightPink transition-all"
-                icon={faFacebookF}
-              />
-            </a>
-            <a href="#" target={"blank"}>
-              <FontAwesomeIcon
-                className="text-white text-2xl hover:text-lightPink transition-all"
-                icon={faInstagram}
-              />
-            </a>
-            <a href="#" target={"blank"}>
-              <FontAwesomeIcon
-                className="text-white text-2xl hover:text-lightPink transition-all"
-                icon={faYoutube}
-              />
-            </a>
-            <a href="#" target={"blank"}>
-              <FontAwesomeIcon
-                className="text-white text-2xl hover:text-lightPink transition-all"
-                icon={faSpotify}
-              />
-            </a>
-            <a
-              href="https://music.apple.com/us/album/mafia-single/1689328296"
-              target={"blank"}
-            >
-              <FontAwesomeIcon
-                className="text-white text-2xl hover:text-lightPink transition-all"
-                icon={faMusic}
               />
             </a>
           </div>

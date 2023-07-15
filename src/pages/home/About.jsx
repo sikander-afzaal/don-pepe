@@ -17,7 +17,7 @@ const About = () => {
           </p>
         </div>
         <img
-          src="/test.webp"
+          src="/capo.webp"
           className="w-full max-w-[700px] xl:max-w-none xl:w-1/2 self-center object-cover rounded-xl"
           alt=""
         />
