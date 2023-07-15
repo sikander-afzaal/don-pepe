@@ -25,13 +25,18 @@ const options = {
 };
 
 export const data = {
-  labels: ["Team", "CEX listings and LPs", "Presale and first LP"],
+  labels: [
+    "Team",
+    "CEX listings and LPs",
+    "Presale and first LP",
+    "Big Buy Contests",
+  ],
   datasets: [
     {
       label: "Token Distribution",
-      data: [5, 10, 85],
-      backgroundColor: ["#A1B86C", "#A46B4A", "#49434e"],
-      borderColor: ["#A1B86C", "#A46B4A", "#49434e"],
+      data: [5, 10, 80, 5],
+      backgroundColor: ["#A1B86C", "#A46B4A", "#49434e", "#f2cf43"],
+      borderColor: ["#A1B86C", "#A46B4A", "#49434e", "#f2cf43"],
       borderWidth: 1,
       cutout: "60%",
     },
