@@ -13,6 +13,17 @@ const Home = () => {
       <Dilema />
       <Other />
       <About />
+      <div className="contain mx-auto my-10 sm:my-[200px]">
+        <video
+          src="/video.mp4"
+          className="w-full object-contain aspect-video"
+          autoPlay
+          controls
+          muted
+          playsInline
+          loop
+        ></video>
+      </div>
       <Distribution />
       <Tax />
       <Roadmap />
