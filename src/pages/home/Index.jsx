@@ -13,7 +13,7 @@ const Home = () => {
       <Dilema />
       <Other />
       <About />
-      <div className="contain mx-auto my-10 sm:my-[200px]">
+      <div className="contain mx-auto mt-10 lg:my-[200px]">
         <video
           src="/video.mp4"
           className="w-full object-contain aspect-video"
