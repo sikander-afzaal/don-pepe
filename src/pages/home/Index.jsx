@@ -9,13 +9,9 @@ import Tax from "./Tax";
 const Home = () => {
   return (
     <>
-      <Hero />
-      <Dilema />
-      <Other />
-      <About />
-      <div className="contain mx-auto mt-10 lg:my-[200px]">
+      <div className="contain mx-auto mt-[125px] xl:mt-[175px]">
         <video
-          src="/video.mp4"
+          src="/trailer.mp4"
           className="w-full object-contain aspect-video"
           autoPlay
           controls
@@ -24,6 +20,11 @@ const Home = () => {
           loop
         ></video>
       </div>
+      <Hero />
+      <Dilema />
+      <Other />
+      <About />
+
       <Distribution />
       <Tax />
       <Roadmap />

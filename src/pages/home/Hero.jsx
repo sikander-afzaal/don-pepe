@@ -47,11 +47,11 @@ const Hero = () => {
     };
   });
   return (
-    <div className="wrapper pt-[150px] xl:pt-[240px] relative isolate">
+    <div className="wrapper pt-[50px] xl:pt-[70px] relative isolate">
       <div className="absolute top-1/2  translate-x-1/2  right-0 w-full max-w-[400px] aspect-square rounded-full blur-[200px] bg-shadow  opacity-80 -z-10"></div>
       <div className="absolute top-0  opacity-70  -translate-x-1/2  left-0 w-full max-w-[400px] aspect-square rounded-full blur-[200px] bg-shadow -z-10"></div>
       <div className="contain xl:flex-row flex-col justify-start items-center text-center xl:text-left xl:items-stretch gap-10">
-        <div className="flex justify-start items-center xl:items-start flex-col max-w-[700px] gap-5">
+        <div className="flex justify-start items-center xl:items-start flex-col  gap-5">
           <h3 className="text-transparent bg-titleGr bg-clip-text font-bold leading-[1.2] text-3xl sm:text-[40px] 2xl:text-[60px]">
             Don Pepe Coin: Where Memes Meet Mobsters
           </h3>
@@ -70,7 +70,7 @@ const Hero = () => {
           </p>
           <button className="ctaBtn">PINKSALE</button>
         </div>
-        <video
+        {/* <video
           src="/hero.mp4"
           playsInline
           autoPlay
@@ -78,7 +78,7 @@ const Hero = () => {
           controls
           loop
           className="w-full max-w-[700px] xl:w-1/2 object-cover rounded-xl"
-        ></video>
+        ></video> */}
       </div>
       <div className="contain flex-col gap-4 justify-start items-center mt-5">
         <div className="grid grid-cols-4 gap-8 mt-4">
@@ -106,29 +106,6 @@ const Hero = () => {
             </h4>
             <p className="text-white font-bold">Seconds</p>
           </div>
-        </div>
-        <div className="flex flex-wrap justify-start items-center gap-5">
-          <a href="#" target="blank">
-            <img
-              src="/bsc.webp"
-              alt=""
-              className="max-w-[150px] object-contain"
-            />
-          </a>
-          <a href="#" target="blank">
-            <img
-              src="/smile.webp"
-              alt=""
-              className="max-w-[150px] object-contain"
-            />
-          </a>
-          <a href="#" target="blank">
-            <img
-              src="/pancake.png"
-              alt=""
-              className="max-w-[250px] object-contain"
-            />
-          </a>
         </div>
         <div className="grid max-w-[700px] sm:mt-5 grid-cols-1 sm:grid-cols-3 w-full gap-5">
           <button className="ctaBtn">Audit</button>

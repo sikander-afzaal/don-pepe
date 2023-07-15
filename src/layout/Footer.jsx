@@ -1,12 +1,4 @@
-import {
-  faFacebookF,
-  faInstagram,
-  faSpotify,
-  faTelegram,
-  faTiktok,
-  faTwitter,
-  faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
+import { faTelegram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUp, faMusic } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 

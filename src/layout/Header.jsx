@@ -1,12 +1,4 @@
-import {
-  faFacebookF,
-  faInstagram,
-  faSpotify,
-  faTelegram,
-  faTiktok,
-  faTwitter,
-  faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
+import { faTelegram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faBars, faMusic, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect } from "react";
@@ -18,7 +10,7 @@ const Header = () => {
   useEffect(() => {
     //header bg when you scroll
     const showBg = () => {
-      if (window.scrollY > 60) {
+      if (window.scrollY > 0) {
         setBg(true);
       } else {
         setBg(false);
