@@ -68,7 +68,7 @@ const Hero = () => {
             skills to crypto, growing his family and enticing gains for the
             community.
           </p>
-          <button className="ctaBtn">PINKSALE</button>
+          <button className="ctaBtn self-center">PINKSALE</button>
         </div>
         {/* <video
           src="/hero.mp4"
