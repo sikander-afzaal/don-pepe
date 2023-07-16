@@ -10,36 +10,36 @@ import { gsap, ScrollTrigger, MotionPathPlugin } from "gsap/all";
 import { useLayoutEffect, useRef } from "react";
 
 const Home = () => {
-  const path = useRef();
-  const coin = useRef();
-  // const wrapper = useRef();
-  useLayoutEffect(() => {
-    gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
+  // const path = useRef();
+  // const coin = useRef();
+  // // const wrapper = useRef();
+  // useLayoutEffect(() => {
+  //   gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 
-    var myAnim = gsap.timeline({
-      defaults: { duration: 2 },
-      scrollTrigger: {
-        trigger: path.current,
-        scrub: 2,
-        start: "top 15%",
-        end: "bottom bottom",
-        // markers: true,
-      },
-    });
-    myAnim.to(coin.current, {
-      ease: "none",
-      motionPath: {
-        path: path.current,
-        align: path.current,
-        alignOrigin: [0.5, 0.5],
-        end: 0.99,
-        start: -0.025,
-      },
-    });
-  }, []);
+  //   var myAnim = gsap.timeline({
+  //     defaults: { duration: 2 },
+  //     scrollTrigger: {
+  //       trigger: path.current,
+  //       scrub: 2,
+  //       start: "top 15%",
+  //       end: "bottom bottom",
+  //       // markers: true,
+  //     },
+  //   });
+  //   myAnim.to(coin.current, {
+  //     ease: "none",
+  //     motionPath: {
+  //       path: path.current,
+  //       align: path.current,
+  //       alignOrigin: [0.5, 0.5],
+  //       end: 0.99,
+  //       start: -0.025,
+  //     },
+  //   });
+  // }, []);
   return (
     <>
-      <svg
+      {/* <svg
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1920 3000"
@@ -70,7 +70,7 @@ const Home = () => {
         src="/nft.svg"
         alt=""
         className="w-[100px] object-contain"
-      />
+      /> */}
       <div className="contain mx-auto mt-[125px] xl:mt-[175px]">
         <video
           src="/trailer.mp4"
