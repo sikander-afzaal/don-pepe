@@ -68,7 +68,16 @@ const Hero = () => {
             skills to crypto, growing his family and enticing gains for the
             community.
           </p>
-          <button className="ctaBtn self-center">PINKSALE</button>
+          <div className="flex justify-center sm:items-center sm:flex-row flex-col w-full gap-3">
+            <button className="ctaBtn self-center">PINKSALE</button>
+            <a
+              href="https://gleam.io/6HJoM/don-pepe-presale-on-pinksale"
+              target="_blank"
+              className="ctaBtn self-center"
+            >
+              WHITELIST
+            </a>
+          </div>
         </div>
         {/* <video
           src="/hero.mp4"
@@ -107,8 +116,14 @@ const Hero = () => {
             <p className="text-white font-bold">Seconds</p>
           </div>
         </div>
-        <div className="grid max-w-[700px] sm:mt-5 grid-cols-1 sm:grid-cols-3 w-full gap-5">
-          <button className="ctaBtn">Audit</button>
+        <div className="grid sm:max-w-[700px] max-w-[184px] sm:mt-5 grid-cols-1 sm:grid-cols-3 w-full gap-5">
+          <a
+            className="block w-full"
+            href="/DonPEPE_SecureWise.pdf"
+            target="_blank"
+          >
+            <button className="ctaBtn w-full">Audit</button>
+          </a>
           <button className="ctaBtn">KYC</button>
           <a href="/DonPepe.pdf" target="_blank">
             {" "}
