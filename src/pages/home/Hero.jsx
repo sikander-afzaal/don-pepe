@@ -110,7 +110,10 @@ const Hero = () => {
         <div className="grid max-w-[700px] sm:mt-5 grid-cols-1 sm:grid-cols-3 w-full gap-5">
           <button className="ctaBtn">Audit</button>
           <button className="ctaBtn">KYC</button>
-          <button className="ctaBtn">WHITEPAPER</button>
+          <a href="/DonPepe.pdf" target="_blank">
+            {" "}
+            <button className="ctaBtn">WHITEPAPER</button>
+          </a>
         </div>
       </div>
     </div>

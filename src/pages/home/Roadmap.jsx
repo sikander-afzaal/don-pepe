@@ -21,11 +21,12 @@ const Roadmap = () => {
             <h3 className="text-title font-bold text-2xl">
               Establishing Territory (Q3 ‘23)
             </h3>
-            <p className="text-white text-base md:text-lg opacity-70">
-              - CMC/CG Listing
-            </p>
+
             <p className="text-white text-base md:text-lg opacity-70">
               - Marketing and Presale
+            </p>
+            <p className="text-white text-base md:text-lg opacity-70">
+              - CMC/CG Listing
             </p>
             <p className="text-white text-base md:text-lg opacity-70">
               - Family Founded
