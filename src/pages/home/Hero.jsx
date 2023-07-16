@@ -124,7 +124,13 @@ const Hero = () => {
           >
             <button className="ctaBtn w-full">Audit</button>
           </a>
-          <button className="ctaBtn">KYC</button>
+          <a
+            href="https://pinksale.notion.site/Don-Pepe-KYC-Verification-911cfe95bc454ad680377bac998bef62?pvs=4"
+            target="blank"
+            className="ctaBtn"
+          >
+            KYC
+          </a>
           <a href="/DonPepe.pdf" target="_blank">
             {" "}
             <button className="ctaBtn">WHITEPAPER</button>
