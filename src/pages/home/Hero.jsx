@@ -47,7 +47,7 @@ const Hero = () => {
     };
   });
   return (
-    <div className="wrapper pt-[50px] xl:pt-[70px] relative isolate">
+    <div className="wrapper pt-[50px] xl:pt-[70px] relative ">
       <div className="absolute top-1/2  translate-x-1/2  right-0 w-full max-w-[400px] aspect-square rounded-full blur-[200px] bg-shadow  opacity-80 -z-10"></div>
       <div className="absolute top-0  opacity-70  -translate-x-1/2  left-0 w-full max-w-[400px] aspect-square rounded-full blur-[200px] bg-shadow -z-10"></div>
       <div className="contain xl:flex-row flex-col justify-start items-center text-center xl:text-left xl:items-stretch gap-10">

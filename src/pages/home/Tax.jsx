@@ -2,7 +2,7 @@ import React from "react";
 
 const Tax = () => {
   return (
-    <div id="tax" className="wrapper  lg:mt-0 mt-10">
+    <div id="tax" className="wrapper relative z-10  lg:mt-0 mt-10">
       <div className="contain justify-start items-start  flex-col gap-5">
         <h3 className="title">Tax</h3>
         <p className="text-white">
