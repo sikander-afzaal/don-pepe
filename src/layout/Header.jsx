@@ -46,7 +46,7 @@ const Header = () => {
         <img
           src="/logo.png"
           className={`${
-            bg ? "w-[90px]" : "w-[100px] xl:w-[150px]"
+            bg ? "w-[70px]" : "w-[100px] xl:w-[150px]"
           } object-contain transition-all duration-300`}
           alt=""
         />

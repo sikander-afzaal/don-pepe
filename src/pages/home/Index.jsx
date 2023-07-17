@@ -21,7 +21,7 @@ const Home = () => {
       scrollTrigger: {
         trigger: path.current,
         scrub: 2,
-        start: "top 5%%",
+        start: "top top",
         end: "bottom bottom",
         // markers: true,
       },
@@ -32,8 +32,8 @@ const Home = () => {
         path: path.current,
         align: path.current,
         alignOrigin: [0.5, 0.5],
-        end: 0.99,
-        start: -0.025,
+        end: 1,
+        start: 0,
       },
     });
   }, []);
