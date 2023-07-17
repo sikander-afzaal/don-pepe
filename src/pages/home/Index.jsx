@@ -21,7 +21,7 @@ const Home = () => {
       scrollTrigger: {
         trigger: path.current,
         scrub: 2,
-        start: "top top",
+        start: "top 18%",
         end: "bottom bottom",
         // markers: true,
       },
@@ -32,7 +32,7 @@ const Home = () => {
         path: path.current,
         align: path.current,
         alignOrigin: [0.5, 0.5],
-        end: 1,
+        end: 0.99,
         start: 0,
       },
     });
@@ -42,7 +42,7 @@ const Home = () => {
       {window.innerWidth > 640 ? (
         <svg
           preserveAspectRatio="none"
-          className="absolute lg:h-[5200px] h-[6000px] sm:w-[604px] w-[300px]  left-1/2 -translate-x-1/2 top-[100px] -z-30"
+          className="absolute lg:h-[5300px] h-[6000px] sm:w-[604px] w-[300px]  left-1/2 -translate-x-1/2 top-[100px] -z-30"
           viewBox="0 0 604 5200"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -81,9 +81,9 @@ const Home = () => {
         ref={coin}
         src="/nft.svg"
         alt=""
-        className="w-[100px] object-contain -z-20"
+        className="w-[100px]   object-contain -z-20"
       />
-      <div className="contain mx-auto mt-[125px] xl:mt-[175px]">
+      <div className="contain relative z-10 mx-auto mt-[125px] xl:mt-[175px]">
         <video
           src="/trailer.mp4"
           className="w-full object-contain aspect-video"
