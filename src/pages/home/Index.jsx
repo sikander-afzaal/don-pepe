@@ -32,7 +32,7 @@ const Home = () => {
         path: path.current,
         align: path.current,
         alignOrigin: [0.5, 0.5],
-        end: 0.99,
+        end: 1,
         start: 0,
       },
     });
@@ -43,7 +43,7 @@ const Home = () => {
         <svg
           preserveAspectRatio="none"
           className="absolute lg:h-[5300px] h-[6000px] sm:w-[604px] w-[300px]  left-1/2 -translate-x-1/2 top-[100px] -z-30"
-          viewBox="0 0 604 5200"
+          viewBox="0 0 604 4800"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
