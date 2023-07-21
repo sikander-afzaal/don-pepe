@@ -11,13 +11,13 @@ import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
 const Home = () => {
   const [documentHeight, setDocumentHeight] = useState(
-    document.body.scrollHeight
+    window.document.body.offsetHeight
   );
   const path = useRef(null);
   const coin = useRef(null);
   // const wrapper = useRef();
   useEffect(() => {
-    setDocumentHeight(document.body.scrollHeight);
+    setDocumentHeight(window.document.body.offsetHeight);
     gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
     const ctx = gsap.context(() => {
       let myAnim = gsap.timeline({
