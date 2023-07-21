@@ -11,12 +11,12 @@ import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
 const Home = () => {
   const [documentHeight, setDocumentHeight] = useState(0);
-  const path = useRef();
-  const coin = useRef();
+  const path = useRef(null);
+  const coin = useRef(null);
   // const wrapper = useRef();
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
     setDocumentHeight(document.body.scrollHeight);
+    gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
     const ctx = gsap.context(() => {
       let myAnim = gsap.timeline({
         defaults: { duration: 2 },
@@ -48,7 +48,7 @@ const Home = () => {
       {window.innerWidth > 640 ? (
         <svg
           preserveAspectRatio="none"
-          height={documentHeight - 500}
+          height={documentHeight - 500 > 0 ? documentHeight - 500 : 0}
           className="absolute  sm:w-[604px] w-[300px]  left-1/2 -translate-x-1/2 top-[100px] -z-30"
           viewBox="0 0 604 4800"
           fill="none"
@@ -68,7 +68,7 @@ const Home = () => {
         </svg>
       ) : (
         <svg
-          height={documentHeight - 500}
+          height={documentHeight - 500 > 0 ? documentHeight - 500 : 0}
           className="absolute  w-[300px]  left-1/2 -translate-x-1/2 top-[100px] -z-30"
           preserveAspectRatio="none"
           viewBox="0 0 304 6923"
