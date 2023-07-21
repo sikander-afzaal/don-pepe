@@ -18,10 +18,14 @@ const Home = () => {
   // const wrapper = useRef();
   useEffect(() => {
     setDocumentHeight(window.document.body.offsetHeight);
+  }, []);
+  {
+    console.log(documentHeight);
+  }
+  useEffect(() => {
     gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
     const ctx = gsap.context(() => {
       let myAnim = gsap.timeline({
-        defaults: { duration: 2 },
         scrollTrigger: {
           trigger: path.current,
           scrub: 2,
@@ -40,7 +44,7 @@ const Home = () => {
           end: 0.96,
         },
       });
-    }, []);
+    });
     return () => {
       ctx.revert();
     };
