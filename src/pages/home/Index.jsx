@@ -48,7 +48,7 @@ const Home = () => {
       {window.innerWidth > 640 ? (
         <svg
           preserveAspectRatio="none"
-          height={documentHeight - 200 > 0 ? documentHeight - 200 : 0}
+          height={documentHeight}
           className="absolute  sm:w-[604px] w-[300px]  left-1/2 -translate-x-1/2 top-[100px] -z-30"
           viewBox="0 0 604 4800"
           fill="none"
@@ -68,7 +68,7 @@ const Home = () => {
         </svg>
       ) : (
         <svg
-          height={documentHeight - 200 > 0 ? documentHeight - 200 : 0}
+          height={documentHeight}
           className="absolute  w-[300px]  left-1/2 -translate-x-1/2 top-[100px] -z-30"
           preserveAspectRatio="none"
           viewBox="0 0 304 6923"
