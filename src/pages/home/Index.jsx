@@ -17,11 +17,9 @@ const Home = () => {
   const coin = useRef(null);
   // const wrapper = useRef();
   useEffect(() => {
-    setDocumentHeight(window.document.body.offsetHeight);
+    setDocumentHeight(window.document.body.offsetHeight + 500);
   }, []);
-  {
-    console.log(documentHeight);
-  }
+
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
     const ctx = gsap.context(() => {
