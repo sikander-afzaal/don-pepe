@@ -10,7 +10,9 @@ import { gsap, ScrollTrigger, MotionPathPlugin } from "gsap/all";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
 const Home = () => {
-  const [documentHeight, setDocumentHeight] = useState(0);
+  const [documentHeight, setDocumentHeight] = useState(
+    document.body.scrollHeight
+  );
   const path = useRef(null);
   const coin = useRef(null);
   // const wrapper = useRef();
