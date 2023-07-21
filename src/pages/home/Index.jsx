@@ -7,42 +7,49 @@ import Roadmap from "./Roadmap";
 import Tax from "./Tax";
 
 import { gsap, ScrollTrigger, MotionPathPlugin } from "gsap/all";
-import { useLayoutEffect, useRef } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
 const Home = () => {
+  const [documentHeight, setDocumentHeight] = useState(0);
   const path = useRef();
   const coin = useRef();
   // const wrapper = useRef();
-  useLayoutEffect(() => {
+  useEffect(() => {
     gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
-
-    var myAnim = gsap.timeline({
-      defaults: { duration: 2 },
-      scrollTrigger: {
-        trigger: path.current,
-        scrub: 2,
-        start: "top 18%",
-        end: "bottom bottom",
-        // markers: true,
-      },
-    });
-    myAnim.to(coin.current, {
-      ease: "none",
-      motionPath: {
-        path: path.current,
-        align: path.current,
-        alignOrigin: [0.5, 0.5],
-        end: 1,
-        start: 0,
-      },
-    });
-  }, []);
+    setDocumentHeight(document.body.scrollHeight);
+    const ctx = gsap.context(() => {
+      let myAnim = gsap.timeline({
+        defaults: { duration: 2 },
+        scrollTrigger: {
+          trigger: path.current,
+          scrub: 2,
+          start: "top 18%",
+          end: "bottom bottom",
+          // markers: true,
+        },
+      });
+      myAnim.to(coin.current, {
+        ease: "none",
+        motionPath: {
+          path: path.current,
+          align: path.current,
+          alignOrigin: [0.5, 0.5],
+          start: 0,
+          end: 0.96,
+        },
+      });
+    }, []);
+    return () => {
+      ctx.revert();
+    };
+  }, [documentHeight]);
   return (
     <>
       {window.innerWidth > 640 ? (
         <svg
           preserveAspectRatio="none"
-          className="absolute lg:h-[5300px] h-[6000px] sm:w-[604px] w-[300px]  left-1/2 -translate-x-1/2 top-[100px] -z-30"
+          height={documentHeight - 500}
+          className="absolute  sm:w-[604px] w-[300px]  left-1/2 -translate-x-1/2 top-[100px] -z-30"
           viewBox="0 0 604 4800"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +68,8 @@ const Home = () => {
         </svg>
       ) : (
         <svg
-          className="absolute h-[6000px] w-[300px]  left-1/2 -translate-x-1/2 top-[100px] -z-30"
+          height={documentHeight - 500}
+          className="absolute  w-[300px]  left-1/2 -translate-x-1/2 top-[100px] -z-30"
           preserveAspectRatio="none"
           viewBox="0 0 304 6923"
           fill="none"
