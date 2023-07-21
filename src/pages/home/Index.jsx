@@ -39,7 +39,7 @@ const Home = () => {
           align: path.current,
           alignOrigin: [0.5, 0.5],
           start: 0,
-          end: 0.96,
+          end: 1,
         },
       });
     });
