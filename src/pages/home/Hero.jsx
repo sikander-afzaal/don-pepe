@@ -8,7 +8,7 @@ const Hero = () => {
 
   let interval = useRef();
   const startTimer = () => {
-    let end = new Date("7/20/2023 5:30 PM");
+    let end = new Date("7/27/2023 5:30 PM");
     interval = setInterval(() => {
       let _second = 1000;
       let _minute = _second * 60;
@@ -70,7 +70,7 @@ const Hero = () => {
           </p>
           <div className="flex justify-center sm:items-center sm:flex-row flex-col w-full gap-3">
             <a
-              href="https://www.pinksale.finance/launchpad/0xFcc168D0279a148195E2847Ba250F00ffBB98c5a?chain=BSC"
+              href="https://www.pinksale.finance/launchpad/0xf0f5D7787CFd42fe3835e491704E59E01C37A87A?chain=BSC"
               target="blank"
               className="ctaBtn self-center"
             >

@@ -96,7 +96,15 @@ const Home = () => {
         className="w-[100px]   object-contain -z-20"
       />
       <div className="contain relative z-10 mx-auto mt-[125px] xl:mt-[175px]">
-        <video
+        <iframe
+          src="https://www.youtube.com/embed/A6-6yqTvf84?autoplay=1&mute=1"
+          title="Don Pepe"
+          frameBorder="0"
+          className="w-full object-contain aspect-video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
+        {/* <video
           src="/trailer.mp4"
           className="w-full object-contain aspect-video"
           autoPlay
@@ -104,7 +112,7 @@ const Home = () => {
           muted
           playsInline
           loop
-        ></video>
+        ></video> */}
       </div>
       <Hero />
       <Dilema />
